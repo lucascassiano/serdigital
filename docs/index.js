@@ -1,10 +1,5 @@
 const DEVELOPERS_URL = 'https://raw.githubusercontent.com/lucascassiano/serdigital/master/developers.json';
 
-ReactDOM.render(
-    <p>loading developers...</p>,
-    document.getElementById('developers')
-);
-
 const LoadDevelopers = (callback, url = DEVELOPERS_URL) => {
     var request = new XMLHttpRequest();
 
@@ -37,20 +32,37 @@ class Developers extends React.Component {
     render() {
         let { ready, developers } = this.state;
 
-        let developersList = developers.map((developer) => {
-            return <div>
-                <p>{developer.name}</p>
-                {developer.skills}
-            </div>
+        let developersList = developers.map((developer, index) => {
+            
+            let skills = "";
+            developer.skills.map((skill, index) => {
+                skills += skill;
+                if (index < developer.skills.length - 1)
+                    skills += ", ";
+            })
+
+            return <li className="mdl-list__item mdl-list__item--three-line">
+                <span className="mdl-list__item-primary-content">
+                    <i className="material-icons mdl-list__item-avatar">person</i>
+                    <span>{developer.name}</span>
+                    <span className="mdl-list__item-text-body">
+                        {skills}
+                    </span>
+                </span>
+                <span className="mdl-list__item-secondary-content">
+                    <a className="mdl-list__item-secondary-action" href="#"><i className="material-icons">star</i></a>
+                </span>
+            </li>
         });
 
         if (!ready) {
-            return <div>loading developers...</div>
+            return <div> <div id="p2" className="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+            </div>
         }
         else
-            return <div>{developersList}</div>;
+            return <ul className="mdl-list">{developersList}
+            </ul>;
     }
-
 
 }
 
