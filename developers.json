@@ -1,6 +1,7 @@
 {
-    "project": {
-        "license": "MIT"
+    "info": {
+        "license": "MIT",
+        "update": "10-10-2018"
     },
     "developers": [
         {
