@@ -33,7 +33,7 @@ class Developers extends React.Component {
         let { ready, developers } = this.state;
 
         let developersList = developers.map((developer, index) => {
-            
+
             let skills = "";
             developer.skills.map((skill, index) => {
                 skills += skill;
@@ -41,7 +41,7 @@ class Developers extends React.Component {
                     skills += ", ";
             })
 
-            return <li className="mdl-list__item mdl-list__item--three-line">
+            return <li className="mdl-list__item mdl-list__item--three-line card">
                 <span className="mdl-list__item-primary-content">
                     <i className="material-icons mdl-list__item-avatar">person</i>
                     <span>{developer.name}</span>
@@ -60,10 +60,9 @@ class Developers extends React.Component {
             </div>
         }
         else
-            return <ul className="mdl-list">{developersList}
+            return <ul className="mdl-list developers-list">{developersList}
             </ul>;
     }
-
 }
 
 ReactDOM.render(

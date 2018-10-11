@@ -1,0 +1,37 @@
+body{
+    background:#f9f9f9;
+}
+
+.layout-content{
+    width:Calc( 100% - 24px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-weight: 100;
+    padding-left:12px;
+    padding-right:12px;
+
+   
+    color:#555;
+}
+
+.card{
+    padding:12px;
+    color:#333;
+    background:#FFF;
+    border-radius: 1px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.25);
+    
+}
+
+.developers-list{
+    display: grid;
+    width: Calc( 100% - 12px);
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 12px;
+    grid-column-gap: 12px;
+}
