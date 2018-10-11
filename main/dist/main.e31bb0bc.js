@@ -64374,45 +64374,7 @@ function (_Component) {
         variant: "h5",
         color: "inherit",
         paragraph: true
-      }, "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents\u2026")), _react.default.createElement(_core.Grid, {
-        container: true,
-        spacing: 24
-      }, _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 12
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=12")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 6
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=6")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 6
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=6")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 3
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=3")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 3
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=3")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 3
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=3")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 3
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=3"))));
+      }, "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents\u2026")));
     }
   }]);
 
@@ -64465,7 +64427,43 @@ function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement(_Header.default, null));
+      return _react.default.createElement("div", null, _react.default.createElement(_core.Grid, {
+        container: true,
+        spacing: 24
+      }, _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 12
+      }, _react.default.createElement(_Header.default, null)), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 6
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=6")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 6
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=6")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 3
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=3")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 3
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=3")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 3
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=3")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 3
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=3"))));
     }
   }]);
 
@@ -64500,7 +64498,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58763" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61959" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
