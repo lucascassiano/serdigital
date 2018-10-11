@@ -42445,45 +42445,7 @@ function (_Component) {
         variant: "h5",
         color: "inherit",
         paragraph: true
-      }, "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents\u2026")), _react.default.createElement(_core.Grid, {
-        container: true,
-        spacing: 24
-      }, _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 12
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=12")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 6
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=6")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 6
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=6")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 3
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=3")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 3
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=3")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 3
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=3")), _react.default.createElement(_core.Grid, {
-        item: true,
-        xs: 3
-      }, _react.default.createElement(_core.Paper, {
-        className: "card"
-      }, "xs=3"))));
+      }, "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents\u2026")));
     }
   }]);
 
@@ -42536,7 +42498,43 @@ function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement(_Header.default, null));
+      return _react.default.createElement("div", null, _react.default.createElement(_core.Grid, {
+        container: true,
+        spacing: 24
+      }, _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 12
+      }, _react.default.createElement(_Header.default, null)), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 6
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=6")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 6
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=6")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 3
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=3")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 3
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=3")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 3
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=3")), _react.default.createElement(_core.Grid, {
+        item: true,
+        xs: 3
+      }, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, "xs=3"))));
     }
   }]);
 
@@ -42545,4 +42543,4 @@ function (_React$Component) {
 
 _reactDom.default.render(_react.default.createElement(App, null), document.getElementById("root"));
 },{"react":"HdMw","react-dom":"X9zx","./components/Header":"RzfG","@material-ui/core":"xwdj"}]},{},["Focm"], null)
-//# sourceMappingURL=/main.2613b6c8.map
+//# sourceMappingURL=/main.6ce02601.map
