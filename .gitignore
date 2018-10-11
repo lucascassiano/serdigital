@@ -1,1 +1,5 @@
 .cache/*
+.cache/
+./main/.cache/*
+.cache
+/main/.cache/*

@@ -6,15 +6,6 @@ html{
 
 }
 
-.header{
-    width:100%;
-    object-fit: contain;
-    height: auto;
-    padding-top:20px;
-    padding-bottom:20px;
-    
-}
-
 .card{
     padding:12px;
 }

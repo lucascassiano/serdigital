@@ -64363,7 +64363,18 @@ function (_Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement(_core.Grid, {
+      return _react.default.createElement("div", null, _react.default.createElement(_core.Paper, {
+        className: "card"
+      }, _react.default.createElement("img", null), _react.default.createElement(_core.Typography, {
+        component: "h1",
+        variant: "h3",
+        color: "inherit",
+        gutterBottom: true
+      }, "Title of a longer featured blog post"), _react.default.createElement(_core.Typography, {
+        variant: "h5",
+        color: "inherit",
+        paragraph: true
+      }, "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents\u2026")), _react.default.createElement(_core.Grid, {
         container: true,
         spacing: 24
       }, _react.default.createElement(_core.Grid, {
