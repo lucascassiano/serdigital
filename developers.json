@@ -1,0 +1,19 @@
+{
+    "project": {
+        "license": "MIT"
+    },
+    "developers": [
+        {
+            "name": "Lucas Cassiano",
+            "github": "lucascassiano",
+            "webpage": "http://lcassiano.com",
+            "skills": [
+                "react",
+                "javascript",
+                "python",
+                "opengl",
+                "three.js"
+            ]
+        }
+    ]
+}
