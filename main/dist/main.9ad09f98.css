@@ -2,4 +2,10 @@ html{
     padding:0px;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    padding:12px;
+
+}
+
+.card{
+    padding:12px;
 }
