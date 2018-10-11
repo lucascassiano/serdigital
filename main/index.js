@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./components/Header";
 
-class HelloMessage extends React.Component {
+class App extends React.Component {
     render() {
-        return <div>Hello {this.props.name}</div>;
+        return <div>
+            <Header />
+        </div>
     }
 }
 
-var mountNode = document.getElementById("root");
-ReactDOM.render(<HelloMessage name="GrupyRN" />, mountNode);
+ReactDOM.render(<App />, document.getElementById("root"));
