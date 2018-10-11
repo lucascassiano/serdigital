@@ -13,7 +13,21 @@
                 "javascript",
                 "python",
                 "opengl",
-                "three.js"
+                "three.js",
+                "front"
+            ]
+        },
+        {
+            "name": "Geraldo",
+            "github": "vitorgeraldocs",
+            "webpage": "http://lcassiano.com",
+            "skills": [
+                "javascript",
+                "python",
+                "django",
+                "flask",
+                "REST",
+                "front"
             ]
         }
     ]
