@@ -2,6 +2,12 @@
 --Nome melhor... pfvr! 🚨
 site simples, auto-gerenciado pela comunidade. Com foco em desenvolvedores de Software, Hardware e Design de UI/UX do Rio Grande do Norte.
 
+# TODO
+- Filtrar desenvolvedores mostrados na página principal
+- Adicionar conteúdo no modal que gera o JSON do desenvolvedor
+- Adicionar Guia de como fazer Pull Request no repositório (possivelmente GIFs ou Imagens)
+- Migrar pro Grupy
+
 # Adicione-se
 ```json
     {
