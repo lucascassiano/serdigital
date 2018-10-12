@@ -30,7 +30,6 @@ class Developers extends React.Component {
         this.updateData = this.updateData.bind(this);
 
         OnLoadData(this.updateData);
-
     }
 
     updateData(data) {

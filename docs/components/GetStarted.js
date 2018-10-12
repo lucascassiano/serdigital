@@ -38,19 +38,46 @@ function getLocation(callback) {
     }
 }
 
+class SubscribeModal extends React.Component {
+    onClose = () => {
+        if (this.props.onClose)
+            this.props.onClose();
+    }
+
+    render() {
+        let modalClass = this.props.open ? "modal modal-open" : "modal";
+
+        return (
+            <div id="myModal" className={modalClass}>
+                <div className="modal-content">
+                    <span className="close" onClick={this.onClose}>&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+            </div>
+        )
+
+    }
+}
+
 class GetStarted extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            modalOpen: false,
             name: null,
             github: null,
             webpage: null,
             skills: null,
+
         }
         getLocation(this.setPosition);
         this.updateData = this.updateData.bind(this);
 
         OnLoadData(this.updateData);
+    }
+
+    toggleSubscribe = () => {
+        this.setState({ modalOpen: !this.state.modalOpen });
     }
 
     updateData(data) {
@@ -105,8 +132,10 @@ class GetStarted extends React.Component {
             <div className="card">
                 <h3><strong>Cadraste-se</strong> na nossa lista</h3>
                 <p>Esta é uma lista auto-gerenciada, todos os membros participam de sua edição e menutenção</p>
-                <button className="button">Cadastrar</button>
+                <button className="button" onClick={this.toggleSubscribe}>Cadastrar</button>
             </div>
+
+            <SubscribeModal open={this.state.modalOpen} onClose={this.toggleSubscribe} />
         </div>
     }
 }
