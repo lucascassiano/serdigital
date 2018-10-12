@@ -26,7 +26,20 @@ class Developers extends React.Component {
         }
 
         //loading developers;
-        LoadDevelopers((developers) => this.setState({ developers, ready: true }));
+        // LoadDevelopers((developers) => this.setState({ developers, ready: true }));
+        this.updateData = this.updateData.bind(this);
+
+        OnLoadData(this.updateData);
+
+    }
+
+    updateData(data) {
+        this.setState({ developers: data, ready: true });
+    }
+
+    componentDidMount() {
+        console.log("app mounted");
+        LoadData();
     }
 
     render() {

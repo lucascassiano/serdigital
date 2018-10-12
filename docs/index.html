@@ -23,7 +23,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Android</title>
+    <title>Portinho Digital</title>
 
     <!-- Page styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
@@ -31,9 +31,19 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/autocomplete.min.css" type="text/css">
+    <script src="js/autocomplete.min.js"></script>
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="index.css">
+
+
     <style>
         #view-source {
       position: fixed;
@@ -54,6 +64,7 @@
 
     <!-- top container-->
     <div class="layout-content">
+        <div class="top-github"><img src="./svg/forkme.svg" /></div>
         <a id="top"></a>
 
         <div id="header">
@@ -98,7 +109,9 @@
     <script src="https://unpkg.com/react@15/dist/react.js"></script>
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyDRR1TsF4qh9VFuT7hVUb1hdX7nZ0DqWcc"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    
+    <script type="text/babel" src="loader.js" data-presets="react, es2015"></script>
     <script type="text/babel" src="index.js" data-presets="react, es2015"></script>
     <script type="text/babel" src="./components/GetStarted.js" data-presets="react, es2015"></script>
 

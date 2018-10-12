@@ -2,6 +2,23 @@ body{
     background:#f9f9f9;
 }
 
+.top-github{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:6vw;
+    opacity: 0.5;
+    transition: 0.8s;
+}
+
+.top-github:hover{
+    opacity: 1;
+}
+.top-github > img{
+    width: 100%;
+    
+
+}
 .layout-content{
     width:Calc( 100% - 24px);
     display: flex;
@@ -34,4 +51,32 @@ body{
     grid-template-columns: 50% 50%;
     grid-row-gap: 12px;
     grid-column-gap: 12px;
+}
+
+/*-- get started--*/
+
+.get-started{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 12px;
+    width: Calc( 100% - 12px);
+    margin-top:12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .get-started{
+        display:flex;
+        flex-direction: column;
+
+    }
+}
+
+.blue{
+    color:#FFF;
+    background: #4A90E2;
+}
+
+.search-field{
+    margin-top:30px;
+    margin-bottom:30px;
 }
