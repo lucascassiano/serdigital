@@ -35,7 +35,9 @@ site simples, auto-gerenciado pela comunidade. Com foco em desenvolvedores de So
 ```
 # Conceitos
 
-# Regras
+# Regras Para os Usuários
 * Não Remover outros;
-* Remover apenas a si mesmo;
-* Pull Requests
+* Alterar ou Remover apenas a si mesmo;
+* Adicionar sempre ao fim do .json 
+* Realizar alterações e Pull Requests
+
