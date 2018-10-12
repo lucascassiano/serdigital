@@ -94,7 +94,7 @@ class GetStarted extends React.Component {
 
                 <div className="search-field">
                     <div className="autocomplete">
-                        <input id="search-input" placeholder="Desenvolvedores, Designers, Ferramentas, Habilidades"></input>
+                        <input id="search-input" placeholder="Desenvolvedores, Designers, Ferramentas..."></input>
                         <div className="search-button"><i className="fas fa-search fa-lg"></i></div>
                     </div>
                 </div>
@@ -103,7 +103,9 @@ class GetStarted extends React.Component {
             </div>
 
             <div className="card">
-                adicione-se à nossa lista
+                <h3><strong>Cadraste-se</strong> na nossa lista</h3>
+                <p>Esta é uma lista auto-gerenciada, todos os membros participam de sua edição e menutenção</p>
+                <button className="button">Cadastrar</button>
             </div>
         </div>
     }
