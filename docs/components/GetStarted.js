@@ -46,7 +46,7 @@ class SubscribeModal extends React.Component {
 
     render() {
         let modalClass = this.props.open ? "modal modal-open" : "modal";
-
+        
         return (
             <div id="myModal" className={modalClass}>
                 <div className="modal-content">

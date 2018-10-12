@@ -2,10 +2,24 @@ const DEVELOPERS_URL = 'https://raw.githubusercontent.com/lucascassiano/serdigit
 
 let registeredListeners = [];
 
+let registeredOnFiltersChanges = [];
+let selectedFilters = [];
+
 const OnLoadData = (callback) => {
     registeredListeners.push(callback);
 }
 
+const OnChangeFilters = (callback) => {
+    registeredOnFiltersChanges.push(callback);
+}
+
+const _onChangedFilters = (filters) => {
+    selectedFilters = filters;
+
+    for (var i in registeredOnFiltersChanges) {
+        registeredOnFiltersChanges[i](selectedFilters);
+    }
+}
 const LoadData = (callback, url = DEVELOPERS_URL) => {
     var request = new XMLHttpRequest();
 
