@@ -38,7 +38,7 @@ body{
     width:6vw;
     opacity: 1;
     transition: 0.8s;
-    z-index: 10;
+    z-index: 2;
 }
 
 .top-github:hover{
@@ -140,7 +140,7 @@ button:hover{
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 3; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -148,7 +148,6 @@ button:hover{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    
 }
 
 .modal-open {
@@ -160,9 +159,10 @@ button:hover{
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: none;
     width: 80%; /* Could be more or less, depending on screen size */
     box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+    border-radius: 2px;
 }
 
 /* The Close Button */
